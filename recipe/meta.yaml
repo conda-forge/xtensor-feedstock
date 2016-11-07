@@ -12,7 +12,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
 
 test:
   requires:
@@ -22,7 +22,7 @@ test:
   commands:
     - test -d ${PREFIX}/include/xtensor  # [unix]
     - test -f ${PREFIX}/include/xtensor/xarray.hpp  # [unix]
-    - if exist %LIBRARY_INC%\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
+    - if exist %PREFIX%\include\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xtensor
