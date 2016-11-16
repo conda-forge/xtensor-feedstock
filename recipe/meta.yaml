@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "2995a57763d1ac73bdfad27b41e32810aec574a1185805e5ad2a71f68800ee4a" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "d45e6e95494d04987cf64ba4b84adb6d9a2b64a860bac8bdb7fc9e346caa5aeb" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,8 @@ test:
 
 about:
   home: http://quantstack.net/xtensor
-  license: BSD
+  license: BSD 3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: 'The C++ tensor algebra library'
   description: 'Multi dimensional arrays with broadcasting and lazy computing'
