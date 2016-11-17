@@ -3,7 +3,7 @@ About xtensor
 
 Home: http://quantstack.net/xtensor
 
-Package license: BSD
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
