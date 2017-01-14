@@ -7,27 +7,27 @@ package:
   version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    url: https://github.com/QuantStack/xtensor/archive/{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/QuantStack/xtensor/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
 
-test:
-  requires:
-    - gtest
+requirements:
+  build:
+    - toolchain
     - cmake
 
-  source_files:
-    - CMakeLists.txt
-    - xtensorConfig.cmake.in
-    - test/*
-
+test:
   commands:
     - test -d ${PREFIX}/include/xtensor  # [unix]
     - test -f ${PREFIX}/include/xtensor/xarray.hpp  # [unix]
-    - if exist %PREFIX%\include\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
+    - test -f ${PREFIX}/share/cmake/xtensor/xtensorConfig.cmake  # [unix]
+    - test -f ${PREFIX}/share/cmake/xtensor/xtensorConfigVersion.cmake  # [unix]
+    - if exist %LIBRARY_PREFIX%\include\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
+    - if exist %PREFIX%\share\cmake\xtensorConfig.cmake (exit 0) else (exit 1)  # [win]
+    - if exist %PREFIX%\share\cmake\xtensorConfigVersion.cmake (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xtensor
