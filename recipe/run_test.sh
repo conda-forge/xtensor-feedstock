@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#cd $SRC_DIR/test
-#conda env create -f ./test-environment.yml
+#conda env create -f ./test/test-environment.yml
 #source activate test-xtensor
-#cmake .
-#make -j2
+#mkdir build
+#cd build
+#cmake ..
+#make test_xtensor
 #./test_xtensor

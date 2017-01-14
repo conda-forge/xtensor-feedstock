@@ -19,6 +19,11 @@ test:
     - gtest
     - cmake
 
+  source_files:
+    - CMakeLists.txt
+    - xtensorConfig.cmake.in
+    - test/*
+
   commands:
     - test -d ${PREFIX}/include/xtensor  # [unix]
     - test -f ${PREFIX}/include/xtensor/xarray.hpp  # [unix]
