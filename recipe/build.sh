@@ -1,2 +1,4 @@
 #!/bin/bash
-cp -r $SRC_DIR/include/ $PREFIX/include/
+
+cmake -DBUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=$PREFIX $SRC_DIR
+make install
