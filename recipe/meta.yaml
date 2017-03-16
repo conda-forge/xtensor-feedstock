@@ -13,9 +13,11 @@ source:
 
 build:
   number: 0
+  skip: true  # [py<36]
 
 requirements:
   build:
+    - python
     - toolchain
     - cmake
 
