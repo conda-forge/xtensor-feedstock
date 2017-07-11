@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.10.6" %}
-{% set sha256 = "d69899ea738258ecd27b49fa97f8eba32784f2867942a7478659e245d049844e" %}
+{% set version = "0.10.7" %}
+{% set sha256 = "c628ce669f17917454f3f4c12b40d13766d162e9bdade799cd7ce82fb7f4bb12" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,11 @@ test:
   commands:
     - test -d ${PREFIX}/include/xtensor  # [unix]
     - test -f ${PREFIX}/include/xtensor/xarray.hpp  # [unix]
-    - test -f ${PREFIX}/share/cmake/xtensor/xtensorConfig.cmake  # [unix]
-    - test -f ${PREFIX}/share/cmake/xtensor/xtensorConfigVersion.cmake  # [unix]
+    - test -f ${PREFIX}/lib/cmake/xtensor/xtensorConfig.cmake  # [unix]
+    - test -f ${PREFIX}/lib/cmake/xtensor/xtensorConfigVersion.cmake  # [unix]
     - if exist %LIBRARY_PREFIX%\include\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\share\cmake\xtensorConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\share\cmake\xtensorConfigVersion.cmake (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_PREFIX%\lib\xtensorConfig.cmake (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_PREFIX%\lib\cmake\xtensorConfigVersion.cmake (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xtensor
