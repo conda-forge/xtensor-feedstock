@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.15.8" %}
-{% set sha256 = "4b226164a3ee347531be9ca3cbdda4b37afc8c0f5fc9c344eeaf3893889c7a03" %}
+{% set version = "0.15.9" %}
+{% set sha256 = "2a2386f526c3c5fdfeda43515c68e503ff237e55cdb5c6f43db0161e2ee19a56" %}
 
 package:
   name: {{ name|lower }}
