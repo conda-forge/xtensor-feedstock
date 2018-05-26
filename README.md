@@ -14,14 +14,16 @@ Multi dimensional arrays with broadcasting and lazy computing
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xtensor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xtensor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xtensor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xtensor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xtensor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xtensor-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xtensor-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xtensor-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/xtensor-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xtensor-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xtensor-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xtensor-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xtensor/badges/version.svg)](https://anaconda.org/conda-forge/xtensor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xtensor/badges/downloads.svg)](https://anaconda.org/conda-forge/xtensor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xtensor-green.svg)](https://anaconda.org/conda-forge/xtensor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xtensor.svg)](https://anaconda.org/conda-forge/xtensor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xtensor.svg)](https://anaconda.org/conda-forge/xtensor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xtensor.svg)](https://anaconda.org/conda-forge/xtensor) |
 
 Installing xtensor
 ==================

@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('cxx') }}
     - cmake
     - xtl >=0.4.9,<0.5
   run:
