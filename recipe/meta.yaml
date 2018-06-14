@@ -16,7 +16,7 @@ build:
   skip: True  # [win and vc<14]
 
 requirements:
-  build:
+  host:
     - {{ compiler('cxx') }}
     - cmake
     - xtl >=0.4.9,<0.5
