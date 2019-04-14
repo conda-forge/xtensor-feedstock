@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.20.2" %}
-{% set sha256 = "ad0c66c94b5d72fda1f0c6ef3a04ad7e68da492ea6c7bec9f6e140b6b4450a4f" %}
+{% set version = "0.20.3" %}
+{% set sha256 = "3fa48602579e36e42595efd4d793ca1cb614e7df1e2c4e3189e59bb71bb21022" %}
 
 package:
   name: {{ name|lower }}
@@ -20,9 +20,9 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - xtl >=0.6.1,<0.7
+    - xtl >=0.6.2,<0.7
   run:
-    - xtl >=0.6.1,<0.7
+    - xtl >=0.6.2,<0.7
 
 test:
   commands:
