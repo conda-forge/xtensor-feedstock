@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/QuantStack/xtensor/archive/{{ version }}.tar.gz
+  url: https://github.com/xtensor-stack/xtensor/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -42,7 +42,7 @@ about:
   summary: 'The C++ tensor algebra library'
   description: 'Multi dimensional arrays with broadcasting and lazy computing'
   doc_url: http://xtensor.readthedocs.io
-  dev_url: https://github.com/QuantStack/xtensor
+  dev_url: https://github.com/xtensor-stack/xtensor
 
 extra:
   recipe-maintainers:
