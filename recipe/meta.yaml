@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.21.3" %}
-{% set sha256 = "f63c25cafea4bfc268edb26e6f5004a28a2f689e6a852bb3559c553106c8d6bf" %}
+{% set version = "0.21.4" %}
+{% set sha256 = "143ef2536f1671e1c7c7834de4a040f1694112e23222fcd2ae59b0f5e5124b57" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -39,8 +39,8 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'The C++ tensor algebra library'
-  description: 'Multi dimensional arrays with broadcasting and lazy computing'
+  summary: The C++ tensor algebra library
+  description: Multi dimensional arrays with broadcasting and lazy computing
   doc_url: http://xtensor.readthedocs.io
   dev_url: https://github.com/xtensor-stack/xtensor
 
