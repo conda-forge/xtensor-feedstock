@@ -5,9 +5,13 @@ Home: http://quantstack.net/xtensor
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xtensor-feedstock/blob/master/LICENSE.txt)
 
 Summary: The C++ tensor algebra library
+
+Development: https://github.com/xtensor-stack/xtensor
+
+Documentation: http://xtensor.readthedocs.io
 
 Multi dimensional arrays with broadcasting and lazy computing
 
