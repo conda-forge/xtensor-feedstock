@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -30,9 +30,9 @@ test:
     - test -f ${PREFIX}/include/xtensor/xarray.hpp  # [unix]
     - test -f ${PREFIX}/lib/cmake/xtensor/xtensorConfig.cmake  # [unix]
     - test -f ${PREFIX}/lib/cmake/xtensor/xtensorConfigVersion.cmake  # [unix]
-    - if exist %LIBRARY_PREFIX%\include\xtensor\xarray.hpp (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_PREFIX%\lib\cmake\xtensorConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_PREFIX%\lib\cmake\xtensorConfigVersion.cmake (exit 0) else (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\include\xtensor\xarray.hpp (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\xtensor\xtensorConfig.cmake (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\xtensor\xtensorConfigVersion.cmake (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xtensor
@@ -49,3 +49,4 @@ extra:
     - SylvainCorlay
     - JohanMabille
     - wolfv
+    - davidbrochart
