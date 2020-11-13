@@ -155,5 +155,6 @@ Feedstock Maintainers
 
 * [@JohanMabille](https://github.com/JohanMabille/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@davidbrochart](https://github.com/davidbrochart/)
 * [@wolfv](https://github.com/wolfv/)
 
