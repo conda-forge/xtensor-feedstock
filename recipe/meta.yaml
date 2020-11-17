@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.21.9" %}
-{% set sha256 = "845cd3cc4f4992be7425b5f44a015181415cdb35d10f73ddbc8d433e331dc740" %}
+{% set version = "0.21.10" %}
+{% set sha256 = "0d1ff8c5f801b566891cfb5c68718f838be94a0b6e07e3fc6164f66e5ec6d3b5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://quantstack.net/xtensor
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: The C++ tensor algebra library
