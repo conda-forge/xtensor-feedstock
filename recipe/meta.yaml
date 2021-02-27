@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -36,13 +36,13 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\xtensor\xtensorConfigVersion.cmake (exit 1)  # [win]
 
 about:
-  home: http://quantstack.net/xtensor
+  home: https://github.com/xtensor-stack/xtensor
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: The C++ tensor algebra library
   description: Multi dimensional arrays with broadcasting and lazy computing
-  doc_url: http://xtensor.readthedocs.io
+  doc_url: https://xtensor.readthedocs.io
   dev_url: https://github.com/xtensor-stack/xtensor
 
 extra:
