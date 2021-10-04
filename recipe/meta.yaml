@@ -21,6 +21,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
+    - openssl
     - xtl >=0.7,<0.8
   run:
     - xtl >=0.7,<0.8
