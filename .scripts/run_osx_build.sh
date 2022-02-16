@@ -30,7 +30,7 @@ mamba update --update-specs --yes --quiet --channel conda-forge \
     conda-build pip boa conda-forge-ci-setup=3
 
 
-pip install --no-deps git+https://github.com/wolfv/boa.git@improve_compat_with_conda_smithy
+pip install --no-deps "git+https://github.com/wolfv/boa.git@improve_compat_with_conda_smithy_boa_0.8.2"
 
 echo -e "\n\nSetting up the condarc and mangling the compiler."
 setup_conda_rc ./ ./recipe ./.ci_support/${CONFIG}.yaml

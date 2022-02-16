@@ -34,7 +34,7 @@ mamba install --update-specs --yes --quiet --channel conda-forge \
 mamba update --update-specs --yes --quiet --channel conda-forge \
     conda-build pip boa conda-forge-ci-setup=3
 
-pip install --no-deps git+https://github.com/wolfv/boa.git@improve_compat_with_conda_smithy
+pip install --no-deps "git+https://github.com/wolfv/boa.git@improve_compat_with_conda_smithy_boa_0.8.2"
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
