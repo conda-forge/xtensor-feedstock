@@ -15,6 +15,7 @@ build:
   number: 0
   skip: 
     - win and vc<14
+    - not (linux and x86_64)
 
 requirements:
   build:

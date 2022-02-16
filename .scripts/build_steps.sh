@@ -46,12 +46,8 @@ if [[ "${HOST_PLATFORM}" != "${BUILD_PLATFORM}" ]] && [[ "${HOST_PLATFORM}" != l
     EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --no-test"
 fi
 
-
-which pip
-which boa
+mamba remove boa -y -q
 pip install --no-deps "git+https://github.com/wolfv/boa.git@improve_compat_with_conda_smithy_boa_0.8.2"
-which pip
-which boa
 
 ( endgroup "Configuring conda" ) 2> /dev/null
 
