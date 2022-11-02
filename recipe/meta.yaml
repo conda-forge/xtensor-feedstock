@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
   run:
     - xtl >=0.7,<0.8
   run_constrained:
-    - xsimd >=8.0.3,<9
+    - xsimd >=8.0.3,<10
 
 test:
   commands:
