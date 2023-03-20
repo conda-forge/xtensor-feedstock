@@ -1,11 +1,11 @@
-About xtensor
-=============
+About xtensor-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xtensor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xtensor-stack/xtensor
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xtensor-feedstock/blob/main/LICENSE.txt)
 
 Summary: The C++ tensor algebra library
 
