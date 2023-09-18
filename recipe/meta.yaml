@@ -1,6 +1,6 @@
 {% set name = "xtensor" %}
-{% set version = "0.24.6" %}
-{% set sha256 = "f87259b51aabafdd1183947747edfff4cff75d55375334f2e81cee6dc68ef655" %}
+{% set version = "0.24.7" %}
+
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/xtensor-stack/xtensor/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 0fbbd524dde2199b731b6af99b16063780de6cf1d0d6cb1f3f4d4ceb318f3106
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - xtl >=0.7,<0.8
   run_constrained:
-    - xsimd >=8.0.3,<10
+    - xsimd >=10.0.0,<11
 
 test:
   commands:
