@@ -11,7 +11,7 @@ Summary: The C++ tensor algebra library
 
 Development: https://github.com/xtensor-stack/xtensor
 
-Documentation: https://xtensor.readthedocs.io
+Documentation: https://xtensor.readthedocs.io/
 
 Multi dimensional arrays with broadcasting and lazy computing
 
